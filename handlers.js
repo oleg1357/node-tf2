@@ -156,6 +156,12 @@ handlers[Language.SO_CacheSubscribed] = function(body) {
 				this.canSendProfessorSpeks = data.need_to_choose_most_helpful_friend;
 				this.emit('accountLoaded');
 				break;
+			case 19:
+				console.log(cache);
+				break;
+			case 2:
+				console.log(cache);
+				break;
 			default:
 				this.emit('debug', "Unknown SO type " + cache.type_id + " with " + cache.object_data.length + " items");
 				break;
